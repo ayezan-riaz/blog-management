@@ -1,0 +1,45 @@
+.loader-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary);
+  z-index: 9999;
+}
+
+.loader-content {
+  text-align: center;
+}
+
+.loader-content p {
+  color: var(--text-secondary);
+  margin-top: var(--spacing-md);
+  font-size: var(--font-size-sm);
+}
+
+.loader-spinner {
+  border: 3px solid var(--border-color);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  margin: 0 auto;
+}
+
+.loader-spinner.sm {
+  width: 20px;
+  height: 20px;
+}
+
+.loader-spinner.md {
+  width: 36px;
+  height: 36px;
+}
+
+.loader-spinner.lg {
+  width: 48px;
+  height: 48px;
+}

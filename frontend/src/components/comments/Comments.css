@@ -1,0 +1,125 @@
+.comments-section {
+  margin-top: var(--spacing-3xl);
+  padding-top: var(--spacing-2xl);
+  border-top: 1px solid var(--border-color);
+}
+
+.comments-title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Comment Form */
+.comment-form {
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.comment-form-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.comment-form-name {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.comment-textarea {
+  min-height: 80px !important;
+}
+
+.comment-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--spacing-md);
+}
+
+.comment-login-prompt {
+  text-align: center;
+  padding: var(--spacing-xl);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-xl);
+  color: var(--text-secondary);
+}
+
+.comment-login-prompt a {
+  color: var(--primary-light);
+  font-weight: 600;
+}
+
+/* Comments List */
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.comment-item {
+  padding: var(--spacing-lg);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast);
+}
+
+.comment-item:hover {
+  border-color: var(--border-hover);
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+}
+
+.comment-author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.comment-author-name {
+  display: block;
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+}
+
+.comment-date {
+  display: block;
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+}
+
+.comment-content {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+}
+
+.comment-delete {
+  color: var(--text-muted) !important;
+}
+
+.comment-delete:hover {
+  color: var(--danger) !important;
+}
+
+.comments-empty {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+}
